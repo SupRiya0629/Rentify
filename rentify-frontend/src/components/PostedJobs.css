@@ -1,0 +1,152 @@
+/* General styling */
+.JobPosts {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #662d8c, #ed1e79);
+}
+
+/* Create Post Section */
+.createpost {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fce6ff;
+  border: 2px solid #7066ff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+  color: #333;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.createpost:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.createpost button {
+  background-color: #7066ff;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  font-weight: bold;
+}
+
+.createpost button:hover {
+  background-color: #7066ff;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Common styles for job post */
+.jobpost {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffffef;
+  border: 2px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  color: #555;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.jobpost:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-color: #007bff;
+}
+
+/* Styles for headings within job details */
+.details h1,
+.details h3 {
+  margin-bottom: 10px;
+}
+
+/* Style for the job title (h1) */
+.details h1 {
+  font-size: 24px;
+  color: #000;
+}
+
+/* Style for the job sector (h3) */
+.details h3 {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style for the buttons section */
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Style for the buttons */
+.btn button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.ap {
+  background-color: rgba(15, 90, 203, 0.853);
+}
+.v {
+  background-color: green;
+}
+.d {
+  background-color: red;
+}
+
+/* Style for buttons within anchor tags */
+.btn a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Hover effect for buttons */
+.btn button:hover {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 768px) {
+  .jobpost {
+    max-width: 100%;
+  }
+
+  .createpost {
+    position: relative;
+    padding: 10px 0px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 8px;
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .createpost button {
+    padding: 15px 25px;
+    font-size: 1.1em;
+  }
+}

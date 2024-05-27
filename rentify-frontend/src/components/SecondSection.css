@@ -1,0 +1,20 @@
+select {
+  margin-left: 10px;
+}
+button {
+  width: 100%; /* Make buttons take full width */
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Style the last button to have different background color */
+button:last-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Adjust spacing between buttons */
+button:not(:last-child) {
+  margin-bottom: 10px;
+}

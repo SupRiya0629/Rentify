@@ -1,0 +1,246 @@
+.editUser {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  color: #333;
+  padding: 20px;
+}
+
+/* User Details Section */
+.user-details {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 auto; /* Center the card */
+  width: 80%; /* Adjust width as needed */
+  max-width: 500px; /* Limit maximum width */
+  animation: fadeInUp 0.5s ease;
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+  margin-bottom: 20px;
+}
+
+.user-details:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.user-details h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center; /* Center heading text */
+}
+
+.user-details ul {
+  list-style-type: none;
+  padding: 0; /* Remove default padding */
+}
+
+.user-details ul li {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 10px;
+}
+
+.user-details ul li strong {
+  width: 110px; /* Adjust the width as needed */
+  text-align: justify;
+  text-wrap: wrap;
+}
+
+.user-details ul li strong.colon {
+  width: 60px; /* Adjust the width as needed */
+  text-align: justify;
+  text-wrap: wrap;
+}
+
+.user-details ul li span {
+  text-align: justify;
+  text-wrap: wrap; /* Allow text to wrap */
+}
+
+/* Add this CSS to style the input fields */
+.editable input[type="text"] {
+  width: 200px; /* Make the input field fill its parent container */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: inherit; /* Inherit font size from parent */
+  transition: 0.5 ease;
+}
+
+.editable input[type="text"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.editable input[type="address"] {
+  width: 200px; /* Make the input field fill its parent container */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: inherit; /* Inherit font size from parent */
+  transition: 0.5 ease;
+}
+
+.editable input[type="address"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* edit button */
+.button {
+  margin-bottom: 40px;
+}
+.edit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float: right;
+  width: 100px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.add-skill-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 180px;
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 43%;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-mode-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  float: right;
+  width: 100px;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.edit-mode-button:hover {
+  background-color: #0056b3;
+}
+
+/* User Skills Section */
+.user-skills {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.user-skills-input {
+  width: 100%; /* Make the input field fill its parent container */
+  padding: 8px;
+  border: none;
+  font-size: inherit; /* Inherit font size from parent */
+  transition: border-color 0.3s ease;
+}
+
+.user-skills input[type="text"] {
+  width: 100%; /* Make the input field fill its parent container */
+  padding: 8px;
+  border: none;
+  font-size: inherit; /* Inherit font size from parent */
+  transition: border-color 0.3s ease;
+}
+
+.user-skills input[type="text"]:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-skills h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.user-skills table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.user-skills th,
+.user-skills td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  word-break: break-word; /* Break long words */
+  transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.user-skills th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Add animation on hover for table cells */
+.user-skills tr:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.01);
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .user-details,
+  .user-skills {
+    padding: 10px;
+    width: 100%; /* Set width to full for mobile devices */
+    max-width: none; /* Remove max-width */
+    margin: 10px auto; /* Remove margin */
+  }
+
+  .edit-button {
+    padding: 6px 12px;
+  }
+  .edit-mode-button {
+    padding: 6px 12px;
+  }
+
+  .user-skills table {
+    font-size: 14px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.no-border {
+  border: none;
+}

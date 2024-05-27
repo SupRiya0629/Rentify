@@ -1,0 +1,57 @@
+For setup in your computer
+
+
+
+1) For Frontend
+
+
+->> Download nodejs from official website
+https://nodejs.org/en/download/current
+--> download windows msi and run it normally as we install for other files
+--> In cmd check whether node and npm are installed properly with 
+    node -v
+    npm -v
+commands. It should return the versions
+ 
+#npx create-react-app rentify-frontend
+
+Then run these commands
+
+cd rentify-frontend
+npm install
+npm install react-router-dom
+npm start
+
+For running Frontend::
+npm start
+
+Keep this running in one cmd
+
+
+Open another cmd for backend
+2) For Backend
+python -m pip install Django
+python -m pip install virtualenv      
+python -m virtualenv venv             or    virtualenv env
+python -m venv venv
+venv\Scripts\activate
+pip install django mysqlclient
+#django-admin startproject rentify-backend
+cd rentify-backend
+pip install --only-binary :all: mysqlclient
+pip install djangorestframework
+#python manage.py startapp rentify
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+After setup is done for both frontend and backend you can Open two terminals. No need to do everything again
+
+In one terminal : python manage.py runserver
+In one terminal : npm start
+
+whenever you change anything in models. Run these three commands
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver

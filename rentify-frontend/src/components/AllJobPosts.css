@@ -1,0 +1,35 @@
+/* Styles for the container */
+.container {
+  width: 80%;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Styles for the card container */
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Styles for each card item */
+.card-item {
+  width: calc(20% - 5px); /* Adjusted width for each card item */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* Styles for the card content */
+.card-content {
+  margin-top: 10px;
+}
+
+/* Style for the card image */
+.card-item img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
